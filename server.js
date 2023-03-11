@@ -37,8 +37,9 @@ SETUP
 */
 import connectDB from "./db/connect.js"
 import express from "express"
-
 const app = express()
+
+app.set("trust proxy", 1)
 app.use(
   cors({
     origin: "https://yard-hnyg.onrender.com",

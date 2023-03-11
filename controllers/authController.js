@@ -140,11 +140,13 @@ export const logout = (req, res) => {
   //   expires: new Date(Date.now()),
   // })
 
+  console.log("have token")
+
   res.clearCookie("token", {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
+    secure: true,
+    // secure: process.env.NODE_ENV === "production",
     sameSite: "None",
-    signed: true,
   })
 
   res.status(StatusCodes.NO_CONTENT)

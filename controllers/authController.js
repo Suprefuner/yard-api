@@ -135,21 +135,19 @@ export const logout = (req, res) => {
 
   if (!token) return
 
-  // res.cookie("token", "", {
-  //   httpOnly: true,
-  //   expires: new Date(Date.now()),
-  // })
-
-  console.log(token)
-
-  const oneDay = 1000 * 60 * 60 * 24
-  res.clearCookie("token", {
+  res.cookie("token", "", {
     httpOnly: true,
-    expires: new Date(Date.now() + oneDay),
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "None",
-    signed: true,
+    expires: new Date(Date.now()),
   })
+
+  // const oneDay = 1000 * 60 * 60 * 24
+  // res.clearCookie("token", {
+  //   httpOnly: true,
+  //   expires: new Date(Date.now() + oneDay),
+  //   secure: process.env.NODE_ENV === "production",
+  //   sameSite: "None",
+  //   signed: true,
+  // })
 
   res.status(StatusCodes.NO_CONTENT)
   // .json({ status: "success", msg: "logged out" })

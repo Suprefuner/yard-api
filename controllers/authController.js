@@ -131,11 +131,24 @@ export const login = async (req, res) => {
 }
 
 export const logout = (req, res) => {
-  res.cookie("token", "", {
+  const { token } = req.signedCookies
+
+  if (!token) return
+
+  // res.cookie("token", "", {
+  //   httpOnly: true,
+  //   expires: new Date(Date.now()),
+  // })
+
+  res.clearCookie("token", {
     httpOnly: true,
-    expires: new Date(Date.now()),
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "None",
+    signed: true,
   })
-  res.status(StatusCodes.OK).json({ status: "success", msg: "logged out" })
+
+  res.status(StatusCodes.NO_CONTENT)
+  // .json({ status: "success", msg: "logged out" })
 }
 
 export const forgotPassword = async (req, res) => {

@@ -140,13 +140,15 @@ export const logout = (req, res) => {
   //   expires: new Date(Date.now()),
   // })
 
-  console.log("have token")
+  console.log(token)
 
+  const oneDay = 1000 * 60 * 60 * 24
   res.clearCookie("token", {
     httpOnly: true,
-    secure: true,
-    // secure: process.env.NODE_ENV === "production",
+    expires: new Date(Date.now() + oneDay),
+    secure: process.env.NODE_ENV === "production",
     sameSite: "None",
+    signed: true,
   })
 
   res.status(StatusCodes.NO_CONTENT)

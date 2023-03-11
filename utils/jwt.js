@@ -12,16 +12,13 @@ const attachCookiesToResponse = (res, payload) => {
   const token = createJWT(payload)
   const oneDay = 1000 * 60 * 60 * 24
 
-  console.log("token")
-
   res.cookie("token", token, {
     httpOnly: true,
     expires: new Date(Date.now() + oneDay),
     secure: process.env.NODE_ENV === "production",
+    sameSite: "None",
     signed: true,
   })
-
-  console.log(res.cookie)
 }
 
 export { createJWT, verifyJWT, attachCookiesToResponse }

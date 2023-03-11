@@ -39,7 +39,14 @@ import connectDB from "./db/connect.js"
 import express from "express"
 
 const app = express()
-app.use(cors(corsOptions))
+// app.use(cors(corsOptions))
+app.use(
+  cors({
+    origin: "https://yard-hnyg.onrender.com/",
+    credentials: true,
+    optionsSuccessStatus: 200,
+  })
+)
 app.use(express.json())
 app.use(
   helmet.contentSecurityPolicy({

@@ -139,13 +139,19 @@ export const getUserAllListing = async (req, res) => {
 
 export const getSingleListing = async (req, res) => {
   const { id } = req.params
-  const listing = await Listing.findById(id).populate({
-    path: "createdBy",
-    populate: {
-      path: "user",
-      select: "photo username rating numOfReviews createdAt follower following",
-    },
-  })
+  const listing = await Listing.findById(id)
+    .populate({
+      path: "createdBy",
+      populate: {
+        path: "user",
+        select:
+          "photo username rating numOfReviews createdAt follower following",
+      },
+    })
+    .populate({
+      path: "category",
+      select: "_id name",
+    })
 
   if (!listing) {
     throw new NotFoundError(`can't find listing with id: ${id}`)
@@ -290,7 +296,7 @@ export const updateListingStatus = async (req, res) => {
     throw new NotFoundError(`can't find listing with id: ${id}`)
   }
 
-  checkPermission(req.user, listing.createdBy)
+  checkPermission(req.user, listing.createdBy.user)
 
   listing.status = status
   await listing.save()

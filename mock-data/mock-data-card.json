@@ -1,0 +1,74 @@
+[
+  {
+    "name": "巨神兵 遊戲王卡",
+    "condition": "lightly used",
+    "category": "640345c145853d5a37d96e76",
+    "price": 1174,
+    "photos": [
+      {
+        "publicId": "listing-photos/%E5%B7%A8%E7%A5%9E%E5%85%B5_uzen28",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677937282/listing-photos/%E5%B7%A8%E7%A5%9E%E5%85%B5_uzen28.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "6403151f8e49642904994384", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-03-10T21:19:17Z"
+  },
+  {
+    "name": "灰流 遊戲王卡",
+    "condition": "well used",
+    "category": "640345c145853d5a37d96e76",
+    "price": 786,
+    "photos": [
+      {
+        "publicId": "listing-photos/%E7%81%B0%E6%B5%81_bygjui",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677937283/listing-photos/%E7%81%B0%E6%B5%81_bygjui.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "6403131f8e496429049942c6", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-04-29T23:07:01Z"
+  },
+  {
+    "name": "噴火龍初代卡",
+    "condition": "lightly used",
+    "category": "640345c145853d5a37d96e76",
+    "price": 257,
+    "photos": [
+      {
+        "publicId": "listing-photos/%E5%99%B4%E7%81%AB%E9%BE%8D_psv8rx",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677937283/listing-photos/%E5%99%B4%E7%81%AB%E9%BE%8D_psv8rx.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "640312a98e49642904994264", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-05-04T21:24:41Z"
+  },
+  {
+    "name": "gold pokemon card",
+    "condition": "like new",
+    "category": "640345c145853d5a37d96e76",
+    "price": 129,
+    "photos": [
+      {
+        "publicId": "listing-photos/gold_pokemon_card_oigdk8",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677937447/listing-photos/gold_pokemon_card_oigdk8.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "640312a98e49642904994264", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-06-02T18:50:13Z"
+  }
+]

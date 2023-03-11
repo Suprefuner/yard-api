@@ -1,0 +1,172 @@
+[
+  {
+    "name": "iphone X",
+    "condition": "like new",
+    "category": "63fb0f1490430692f359da82",
+    "price": 4767,
+    "photos": [
+      {
+        "publicId": "listing-photos/iphone-x_v61znj",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677930859/listing-photos/iphone-x_v61znj.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-12-24T13:39:11Z"
+  },
+  {
+    "name": "Galaxy S23 Ultra",
+    "condition": "brand new",
+    "category": "63fb0f1490430692f359da82",
+    "price": 7520,
+    "photos": [
+      {
+        "publicId": "listing-photos/galaxy-s23-ultra-2_vzur50",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677930931/listing-photos/galaxy-s23-ultra-2_vzur50.jpg"
+      },
+      {
+        "publicId": "listing-photos/galaxy-s23-ultra-1_myf1wz",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677930931/listing-photos/galaxy-s23-ultra-1_myf1wz.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-07-20T14:31:29Z"
+  },
+  {
+    "name": "Nokia 3310",
+    "condition": "like new",
+    "category": "63fb0f1490430692f359da82",
+    "price": 599,
+    "photos": [
+      {
+        "publicId": "listing-photos/3310_napbbs",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677930996/listing-photos/3310_napbbs.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-02-19T07:25:48Z"
+  },
+  {
+    "name": "iphone 14 pro",
+    "condition": "brand new",
+    "category": "63fb0f1490430692f359da82",
+    "price": 6442,
+    "photos": [
+      {
+        "publicId": "listing-photos/iphone-14-pro_rgqyaz",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677931085/listing-photos/iphone-14-pro_rgqyaz.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-11-20T13:27:39Z"
+  },
+  {
+    "name": "iphone 13 pro",
+    "condition": "well used",
+    "category": "63fb0f1490430692f359da82",
+    "price": 8204,
+    "photos": [
+      {
+        "publicId": "listing-photos/iphone-13-pro_boo8ze",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677931124/listing-photos/iphone-13-pro_boo8ze.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-03-18T21:17:36Z"
+  },
+  {
+    "name": "Galaxy S23",
+    "condition": "well used",
+    "category": "63fb0f1490430692f359da82",
+    "price": 6398,
+    "photos": [
+      {
+        "publicId": "listing-photos/galaxy-s23_j9tsvo",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677931246/listing-photos/galaxy-s23_j9tsvo.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-08-20T10:58:47Z"
+  },
+  {
+    "name": "Samsung Galaxy A14",
+    "condition": "lightly used",
+    "category": "63fb0f1490430692f359da82",
+    "price": 4726,
+    "photos": [
+      {
+        "publicId": "listing-photos/Samsung-Galaxy-A14-1_aolasq",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677931311/listing-photos/Samsung-Galaxy-A14-1_aolasq.jpg"
+      },
+      {
+        "publicId": "listing-photos/Samsung-Galaxy-A14-2_vcdq8y",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677931310/listing-photos/Samsung-Galaxy-A14-2_vcdq8y.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-09-05T02:10:54Z"
+  },
+  {
+    "name": "Samsung(F7210) Z Flip4",
+    "condition": "well used",
+    "category": "63fb0f1490430692f359da82",
+    "price": 1173,
+    "photos": [
+      {
+        "publicId": "listing-photos/f7210_n4umoe",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677931395/listing-photos/f7210_n4umoe.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-09-25T00:43:45Z"
+  },
+  {
+    "name": "GOOGLE PIXEL 7 PRO",
+    "condition": "like new",
+    "category": "63fb0f1490430692f359da82",
+    "price": 9385,
+    "photos": [
+      {
+        "publicId": "listing-photos/Google-Pixel-7-Pro_wa8fw3",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677931435/listing-photos/Google-Pixel-7-Pro_wa8fw3.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-10-25T12:11:23Z"
+  }
+]

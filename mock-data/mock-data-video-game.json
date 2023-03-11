@@ -1,0 +1,60 @@
+[
+  {
+    "name": "ps5",
+    "condition": "well used",
+    "category": "64004aa06c1df6b8094542e8",
+    "price": 1045,
+    "photos": [
+      {
+        "publicId": "listing-photos/JulWk4-0725-PlayStation5-02-Consoles-01-PS5-210714-1626281652617_pn5d69.",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935819/listing-photos/JulWk4-0725-PlayStation5-02-Consoles-01-PS5-210714-1626281652617_pn5d69.webp"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "640312cf8e49642904994287", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-06-17T02:46:00Z"
+  },
+  {
+    "name": "xbox",
+    "condition": "like new",
+    "category": "64004aa06c1df6b8094542e8",
+    "price": 1336,
+    "photos": [
+      {
+        "publicId": "listing-photos/xbox_a9b9ah",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935820/listing-photos/xbox_a9b9ah.png"
+      },
+      {
+        "publicId": "listing-photos/xbox-2_dsm9ep",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935819/listing-photos/xbox-2_dsm9ep.webp"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "6403131f8e496429049942c6", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-04-06T23:18:06Z"
+  },
+  {
+    "name": "god of war ps4",
+    "condition": "well used",
+    "category": "64004aa06c1df6b8094542e8",
+    "price": 1231,
+    "photos": [
+      {
+        "publicId": "listing-photos/god-of-war-ps4_jsqaaw",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935819/listing-photos/god-of-war-ps4_jsqaaw.webp"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "640312ea8e4964290499429c", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-04-06T04:48:51Z"
+  }
+]

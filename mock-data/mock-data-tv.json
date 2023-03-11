@@ -1,0 +1,122 @@
+[
+  {
+    "name": "samsung 43\" QLED 4K Q60B",
+    "condition": "heavily used",
+    "category": "64004a6e6c1df6b8094542e3",
+    "price": 8164,
+    "photos": [
+      {
+        "publicId": "listing-photos/121-50-00196-1_1__r1me76",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932394/listing-photos/121-50-00196-1_1__r1me76.jpg"
+      },
+      {
+        "publicId": "listing-photos/hk-feature-qled-q60b-533256101_zbywwf",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932410/listing-photos/hk-feature-qled-q60b-533256101_zbywwf.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-12-05T08:09:08Z"
+  },
+  {
+    "name": "LG 32LM6300PCB",
+    "condition": "lightly used",
+    "category": "64004a6e6c1df6b8094542e3",
+    "price": 7120,
+    "photos": [
+      {
+        "publicId": "listing-photos/download_opqb9g",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932562/listing-photos/download_opqb9g.jpg"
+      },
+      {
+        "publicId": "listing-photos/images_mdkohe",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932563/listing-photos/images_mdkohe.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "640312a98e49642904994264", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-09-05T11:35:09Z"
+  },
+  {
+    "name": "TCL 65-Inch 6-Series 4K Google TV",
+    "condition": "like new",
+    "category": "64004a6e6c1df6b8094542e3",
+    "price": 777,
+    "photos": [
+      {
+        "publicId": "listing-photos/design-small_ibh8uq",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932614/listing-photos/design-small_ibh8uq.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "640312cf8e49642904994287", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-07-19T15:06:26Z"
+  },
+  {
+    "name": "HI-FI MICRO SYSTEM XL-B517D(BK)",
+    "condition": "well used",
+    "category": "64004a6e6c1df6b8094542e3",
+    "price": 3704,
+    "photos": [
+      {
+        "publicId": "listing-photos/download_1_bae2hg",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932645/listing-photos/download_1_bae2hg.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "640312ea8e4964290499429c", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-07-07T10:05:12Z"
+  },
+  {
+    "name": "Belkin SOUNDFORM ELITE Hi-Fi 智能喇叭+ 無線充電器",
+    "condition": "lightly used",
+    "category": "64004a6e6c1df6b8094542e3",
+    "price": 4010,
+    "photos": [
+      {
+        "publicId": "listing-photos/DSC03244_iyg8l3",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932700/listing-photos/DSC03244_iyg8l3.jpg"
+      },
+      {
+        "publicId": "listing-photos/DSC03312_sgnwsp",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932699/listing-photos/DSC03312_sgnwsp.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "6403130a8e496429049942b1", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-09-14T00:16:05Z"
+  },
+  {
+    "name": "homepod",
+    "condition": "like new",
+    "category": "64004a6e6c1df6b8094542e3",
+    "price": 8039,
+    "photos": [
+      {
+        "publicId": "listing-photos/homepod-select-202210_FMT_WHH_gu0crt",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677932732/listing-photos/homepod-select-202210_FMT_WHH_gu0crt.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "6403131f8e496429049942c6", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-08-01T03:47:17Z"
+  }
+]

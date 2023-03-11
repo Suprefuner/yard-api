@@ -1,0 +1,114 @@
+[
+  {
+    "name": "OFF-WHITE c/o VIRGIL ABLOH",
+    "condition": "heavily used",
+    "category": "63ef453866dfc4dd3810b6f8",
+    "price": 1537,
+    "photos": [
+      {
+        "publicId": "listing-photos/off-white-1_mlneio",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677933516/listing-photos/off-white-1_mlneio.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "63fececc100a7496365b19d5", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-10-05T10:32:42Z"
+  },
+  {
+    "name": "adidas x Gucci Trefoil print T-shirt in red and green",
+    "condition": "brand new",
+    "category": "63ef453866dfc4dd3810b6f8",
+    "price": 110,
+    "photos": [
+      {
+        "publicId": "listing-photos/images_1_tfbflk",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677933537/listing-photos/images_1_tfbflk.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "640312a98e49642904994264", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-01-02T14:06:18Z"
+  },
+  {
+    "name": "adidas x Gucci cotton polo",
+    "condition": "brand new",
+    "category": "63ef453866dfc4dd3810b6f8",
+    "price": 532,
+    "photos": [
+      {
+        "publicId": "listing-photos/1654611080-screen-shot-2022-06-07-at-10-07-06-am-1654611041_esqa0f",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677933557/listing-photos/1654611080-screen-shot-2022-06-07-at-10-07-06-am-1654611041_esqa0f.png"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "640312cf8e49642904994287", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-10-08T06:39:04Z"
+  },
+  {
+    "name": "HUMAN MADE LONG SLEEVE TIGER T-SHIRT",
+    "condition": "well used",
+    "category": "63ef453866dfc4dd3810b6f8",
+    "price": 1086,
+    "photos": [
+      {
+        "publicId": "listing-photos/human-made_wyr8io",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677933597/listing-photos/human-made_wyr8io.png"
+      },
+      {
+        "publicId": "listing-photos/human-made-2_cgm0f6",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677933596/listing-photos/human-made-2_cgm0f6.png"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "640312ea8e4964290499429c", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-04-03T05:50:54Z"
+  },
+  {
+    "name": "AMI DE COEUR CREWNECK SWEATER",
+    "condition": "well used",
+    "category": "63ef453866dfc4dd3810b6f8",
+    "price": 1540,
+    "photos": [
+      {
+        "publicId": "listing-photos/ami_xtrhuz",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677933626/listing-photos/ami_xtrhuz.png"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "6403130a8e496429049942b1", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-05-11T08:27:17Z"
+  },
+  {
+    "name": "Patagonia Classic Retro-X Fleece Jacket",
+    "condition": "well used",
+    "category": "63ef453866dfc4dd3810b6f8",
+    "price": 787,
+    "photos": [
+      {
+        "publicId": "listing-photos/patagonia_oleskz",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677933627/listing-photos/patagonia_oleskz.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "6403131f8e496429049942c6", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-04-08T04:20:36Z"
+  }
+]

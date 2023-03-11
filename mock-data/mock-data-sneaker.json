@@ -1,0 +1,122 @@
+[
+  {
+    "name": "dior x air jordan 1",
+    "condition": "heavily used",
+    "category": "63ef46b58a8549dbfaf573df",
+    "price": 472,
+    "photos": [
+      {
+        "publicId": "listing-photos/508-5089009_dior-x-nike-air-jordan-1-hd-png_tx12tz",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935153/listing-photos/508-5089009_dior-x-nike-air-jordan-1-hd-png_tx12tz.png"
+      },
+      {
+        "publicId": "listing-photos/Dior-x-Air-Jordan-1s_xqjnkx",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935154/listing-photos/Dior-x-Air-Jordan-1s_xqjnkx.webp"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "6403130a8e496429049942b1", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-11-24T16:42:38Z"
+  },
+  {
+    "name": "yeezy boost 350v2",
+    "condition": "like new",
+    "category": "63ef46b58a8549dbfaf573df",
+    "price": 898,
+    "photos": [
+      {
+        "publicId": "listing-photos/adidas-Yeezy-Boost-350-V2-Beluga-Reflective-Product_e4q8uv",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935153/listing-photos/adidas-Yeezy-Boost-350-V2-Beluga-Reflective-Product_e4q8uv.webp"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "6403130a8e496429049942b1", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-03-27T02:42:33Z"
+  },
+  {
+    "name": "Balenciaga triple s",
+    "condition": "heavily used",
+    "category": "63ef46b58a8549dbfaf573df",
+    "price": 1543,
+    "photos": [
+      {
+        "publicId": "listing-photos/balenciaga-triple-s-red-blue-2_zgcojx",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935153/listing-photos/balenciaga-triple-s-red-blue-2_zgcojx.webp"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "640312ea8e4964290499429c", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-06-07T01:24:07Z"
+  },
+  {
+    "name": "vans authentic",
+    "condition": "lightly used",
+    "category": "63ef46b58a8549dbfaf573df",
+    "price": 991,
+    "photos": [
+      {
+        "publicId": "listing-photos/VN000EE3BLK-HERO_sggd6m",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935153/listing-photos/VN000EE3BLK-HERO_sggd6m.webp"
+      },
+      {
+        "publicId": "listing-photos/download_fvh4k9",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935153/listing-photos/download_fvh4k9.jpg"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "640312a98e49642904994264", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-02-25T15:46:29Z"
+  },
+  {
+    "name": "converse 1970 blue",
+    "condition": "lightly used",
+    "category": "63ef46b58a8549dbfaf573df",
+    "price": 969,
+    "photos": [
+      {
+        "publicId": "listing-photos/converser-1_j7i7hz",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935153/listing-photos/converser-1_j7i7hz.jpg"
+      },
+      {
+        "publicId": "listing-photos/converser-2_kjs0oy",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935153/listing-photos/converser-2_kjs0oy.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "640312cf8e49642904994287", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-10-14T19:24:09Z"
+  },
+  {
+    "name": "blundstone",
+    "condition": "lightly used",
+    "category": "63ef46b58a8549dbfaf573df",
+    "price": 666,
+    "photos": [
+      {
+        "publicId": "listing-photos/blundstone-2_shcpbk",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677935154/listing-photos/blundstone-2_shcpbk.webp"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "6403151f8e49642904994384", "review": "false" },
+    "dealMethod": { "meetUp": true, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-12-26T19:00:45Z"
+  }
+]

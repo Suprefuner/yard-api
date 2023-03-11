@@ -1,0 +1,78 @@
+[
+  {
+    "name": "iron man figure",
+    "condition": "brand new",
+    "category": "640345ca45853d5a37d96e7a",
+    "price": 626,
+    "photos": [
+      {
+        "publicId": "listing-photos/iron-man-figure_hxmpvg",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677936356/listing-photos/iron-man-figure_hxmpvg.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "6403131f8e496429049942c6", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2022-05-02T20:56:44Z"
+  },
+  {
+    "name": "wolerine figure",
+    "condition": "brand new",
+    "category": "640345ca45853d5a37d96e7a",
+    "price": 1208,
+    "photos": [
+      {
+        "publicId": "listing-photos/wolverine_ninp5d",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677936356/listing-photos/wolverine_ninp5d.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "6403151f8e49642904994384", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-05-02T08:55:31Z"
+  },
+  {
+    "name": "kiby figure",
+    "condition": "lightly used",
+    "category": "640345ca45853d5a37d96e7a",
+    "price": 184,
+    "photos": [
+      {
+        "publicId": "listing-photos/kiby-figure_ji04tj",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677936355/listing-photos/kiby-figure_ji04tj.webp"
+      },
+      {
+        "publicId": "listing-photos/kiby-figure-2_favbhc",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677936356/listing-photos/kiby-figure-2_favbhc.webp"
+      }
+    ],
+    "status": "sell",
+    "createdBy": { "user": "640312ea8e4964290499429c", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": false },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-04-03T18:31:04Z"
+  },
+  {
+    "name": "shark figure",
+    "condition": "heavily used",
+    "category": "640345ca45853d5a37d96e7a",
+    "price": 364,
+    "photos": [
+      {
+        "publicId": "listing-photos/shark-1_dpmhbd",
+        "url": "https://res.cloudinary.com/dytia9net/image/upload/v1677936355/listing-photos/shark-1_dpmhbd.jpg"
+      }
+    ],
+    "status": "reserved",
+    "createdBy": { "user": "6403151f8e49642904994384", "review": "false" },
+    "dealMethod": { "meetUp": false, "delivery": true },
+    "meetUpLocation": "cwb",
+    "numOfFavorite": 0,
+    "createdAt": "2021-05-23T13:13:55Z"
+  }
+]

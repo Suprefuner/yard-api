@@ -40,7 +40,10 @@ import express from "express"
 const app = express()
 app.use(
   cors({
-    origin: "https://yard-hnyg.onrender.com/",
+    origin: [
+      "https://yard-hnyg.onrender.com/",
+      "https://www.yard-hnyg.onrender.com/",
+    ],
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
@@ -125,10 +128,10 @@ const start = async () => {
     await connectDB(process.env.MONGO_URL)
 
     app.listen(port, () => {
-      // console.log(`server is listening on port:${port}`)
+      console.log(`server is listening on port:${port}`)
     })
   } catch (error) {
-    // console.log(error)
+    console.log(error)
   }
 }
 

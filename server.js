@@ -42,7 +42,7 @@ const app = express()
 // app.use(cors(corsOptions))
 app.use(
   cors({
-    origin: "https://yard-hnyg.onrender.com/",
+    origin: "https://yard-hnyg.onrender.com",
     credentials: true,
     optionsSuccessStatus: 200,
   })

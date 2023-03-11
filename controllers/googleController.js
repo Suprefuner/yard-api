@@ -9,8 +9,7 @@ export const googleScope = () => {
 
 export const googleCallback = () => {
   return passport.authenticate("google", {
-    // successRedirect: "http://localhost:5173",
-    successRedirect: "http://localhost:5000",
-    failureRedirect: "/api/v1/auth/google/failed",
+    successRedirect: "https://yard-hnyg.onrender.com/",
+    failureRedirect: "https://yard-hnyg.onrender.com/",
   })
 }

@@ -5,6 +5,7 @@ import morgan from "morgan"
 import cookieParser from "cookie-parser"
 import session from "express-session"
 import cors from "cors"
+import corsOptions from "./utils/corsConfig.js"
 import path, { dirname } from "path"
 import { fileURLToPath } from "url"
 
@@ -38,16 +39,7 @@ import connectDB from "./db/connect.js"
 import express from "express"
 
 const app = express()
-app.use(
-  cors({
-    origin: [
-      "https://yard-hnyg.onrender.com/",
-      "https://www.yard-hnyg.onrender.com/",
-    ],
-    methods: "GET,POST,PUT,DELETE",
-    credentials: true,
-  })
-)
+app.use(cors(corsOptions))
 app.use(express.json())
 app.use(
   helmet.contentSecurityPolicy({

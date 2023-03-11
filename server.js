@@ -40,7 +40,7 @@ import express from "express"
 const app = express()
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://yard-hnyg.onrender.com/",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })

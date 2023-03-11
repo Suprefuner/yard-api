@@ -4,6 +4,7 @@ import "express-async-errors"
 import morgan from "morgan"
 import cookieParser from "cookie-parser"
 import session from "express-session"
+import createMemoryStore from "memorystore"
 import cors from "cors"
 import path, { dirname } from "path"
 import { fileURLToPath } from "url"
@@ -61,9 +62,14 @@ app.use(xss())
 app.use(mongoSanitize())
 
 app.use(cookieParser(process.env.JWT_SECRET))
+const MemoryStore = createMemoryStore(session)
 app.use(
   session({
     secret: "keyboard cat",
+    cookie: { maxAge: 24 * 60 * 60 },
+    store: new MemoryStore({
+      checkPeriod: 24 * 60 * 60,
+    }),
     resave: false,
     saveUninitialized: false,
   })

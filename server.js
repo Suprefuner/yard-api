@@ -67,7 +67,13 @@ const MemoryStore = createMemoryStore(session)
 app.use(
   session({
     secret: "keyboard cat",
-    cookie: { maxAge: 24 * 60 * 60 },
+    cookie: {
+      httpOnly: true,
+      expires: new Date(Date.now() + 1000 * 60 * 60 * 24),
+      secure: process.env.NODE_ENV === "production",
+      domain: process.env.COOKIE_DOMAIN,
+      signed: true,
+    },
     store: new MemoryStore({
       checkPeriod: 24 * 60 * 60,
     }),

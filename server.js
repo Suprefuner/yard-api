@@ -42,7 +42,7 @@ const app = express()
 app.set("trust proxy", 1)
 app.use(
   cors({
-    origin: "https://yard-api.onrender.com",
+    origin: "https://yard-hnyg.onrender.com",
     // origin: "http://localhost:5000",
     credentials: true,
     optionsSuccessStatus: 200,

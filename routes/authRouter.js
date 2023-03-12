@@ -1,6 +1,5 @@
 import express from "express"
 import rateLimiter from "express-rate-limit"
-import { StatusCodes } from "http-status-codes"
 import { authenticateUser } from "../middlewares/index.js"
 import { googleScope, googleCallback } from "../controllers/googleController.js"
 import {
@@ -40,15 +39,5 @@ GOOGLE LOGIN
 // router.get("/google", apiLimiter, googleScope())
 router.get("/google", googleScope())
 router.get("/google/callback", googleCallback())
-router.get("/google/success", (req, res) => {
-  res.status(StatusCodes.OK).json({
-    msg: `successes!!!!!!`,
-  })
-})
-router.get("/google/failed", (req, res) => {
-  res.status(StatusCodes.UNAUTHORIZED).json({
-    msg: `Log in fail`,
-  })
-})
 
 export default router

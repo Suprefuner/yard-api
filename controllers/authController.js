@@ -139,6 +139,7 @@ export const logout = (req, res, next) => {
       httpOnly: true,
       expires: new Date(Date.now()),
       sameSite: "None",
+      secure: process.env.NODE_ENV === "production",
     })
 
     res.status(StatusCodes.OK).json({ status: "success", msg: "logged out" })

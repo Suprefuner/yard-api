@@ -60,7 +60,7 @@ export const register = async (req, res) => {
     verificationToken,
     // frontend route
     // origin: "http://localhost:5173",
-    origin: "https://yard-hnyg.onrender.com/",
+    origin: "https://yard-hnyg.onrender.com",
   })
 
   res.status(StatusCodes.CREATED).json({
@@ -160,7 +160,7 @@ export const forgotPassword = async (req, res) => {
         email,
         resetPasswordToken,
         // origin: "http://localhost:5173",
-        origin: "https://yard-hnyg.onrender.com/",
+        origin: "https://yard-hnyg.onrender.com",
       })
     } catch (error) {
       user.passwordToken = undefined

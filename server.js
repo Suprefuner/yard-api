@@ -71,8 +71,15 @@ app.use(
       checkPeriod: 24 * 60 * 60,
     }),
     cookie: {
-      maxAge: 1000 * 60 * 60 * 24,
+      httpOnly: true,
+      expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "None",
+      signed: true,
     },
+    // cookie: {
+    //   maxAge: 1000 * 60 * 60 * 24,
+    // },
     resave: false,
     saveUninitialized: false,
   })

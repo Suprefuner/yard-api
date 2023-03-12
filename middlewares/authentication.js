@@ -4,11 +4,18 @@ import { UnauthenticatedError } from "../errors/index.js"
 const authenticateUser = async (req, res, next) => {
   const { token } = req.signedCookies
 
+  console.log("this is token")
+  console.log(token)
+
+  console.log("this is req.user")
+  console.log(req.user)
+
   // IF USER LOGIN WITH GOOGLE PASSPORT.JS WILL ASSIGN THEM AS req.user
   if (!token && !req.user) throw new UnauthenticatedError(`please login`)
 
   if (req.user) {
     attachCookiesToResponse(res, req.user)
+    console.log("attached google user to cookie")
     next()
   } else {
     try {

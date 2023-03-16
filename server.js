@@ -127,6 +127,7 @@ ONCE READY TO DEPLOY
 =================================================
 */
 app.get("*", (req, res) => {
+  console.log("show index.html")
   res.sendFile(path, resolve(__dirname, "../client/dist", "index.html"))
 })
 

@@ -58,18 +58,15 @@ export const register = async (req, res) => {
   const tokenUser = { id: user._id, email: user.email, role: user.role }
   attachCookiesToResponse(res, tokenUser)
 
-  console.log("start send email")
-
   await sendVerificationEmail({
     email,
     verificationToken,
     // frontend route
+    // FIXME DEVELOPMENT
     // origin: "http://localhost:5173",
-    // origin: "https://yard-hnyg.onrender.com",
-    origin: process.env.CLIENT_URL,
+    origin: "https://yard-hnyg.onrender.com",
+    // origin: process.env.CLIENT_URL,
   })
-
-  console.log("after send email")
 
   res.status(StatusCodes.CREATED).json({
     status: "success",
@@ -168,6 +165,7 @@ export const forgotPassword = async (req, res) => {
       await sendResetPasswordEmail({
         username: user.username,
         email,
+        // FIXME DEVELOPMENT
         resetPasswordToken,
         // origin: "http://localhost:5173",
         origin: "https://yard-hnyg.onrender.com",

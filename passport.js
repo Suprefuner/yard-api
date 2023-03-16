@@ -61,6 +61,10 @@ passport.serializeUser((user, done) => {
   return done(null, { id, email, role })
 })
 
-passport.deserializeUser(async (user, done) => {
+passport.deserializeUser((user, done) => {
   return done(null, user)
 })
+
+// passport.deserializeUser(async (user, done) => {
+//   return done(null, user)
+// })

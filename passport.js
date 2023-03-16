@@ -57,11 +57,10 @@ passport.use(
 )
 
 passport.serializeUser((user, done) => {
-  console.log("serialize")
   const { id, email, role } = user
-  done(null, { id, email, role })
+  return done(null, { id, email, role })
 })
+
 passport.deserializeUser(async (user, done) => {
-  console.log("deserializeUser")
-  done(null, user)
+  return done(null, user)
 })

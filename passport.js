@@ -58,12 +58,25 @@ passport.use(
 
 passport.serializeUser((user, done) => {
   const { id, email, role } = user
-  return done(null, { id, email, role })
+  process.nextTick(() => {
+    return done(null, { id, email, role })
+  })
 })
 
 passport.deserializeUser((user, done) => {
-  return done(null, user)
+  process.nextTick(() => {
+    return done(null, user)
+  })
 })
+
+// passport.serializeUser((user, done) => {
+//   const { id, email, role } = user
+//   return done(null, { id, email, role })
+// })
+
+// passport.deserializeUser((user, done) => {
+//   return done(null, user)
+// })
 
 // passport.deserializeUser(async (user, done) => {
 //   return done(null, user)

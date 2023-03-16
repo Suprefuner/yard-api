@@ -1,3 +1,4 @@
+import "dotenv/config.js"
 import crypto from "crypto"
 import bcrypt from "bcryptjs"
 import { StatusCodes } from "http-status-codes"
@@ -19,13 +20,15 @@ import {
 
 /*
 ===================================================================
-DEVELOPMENT EMAIL SETTING
+PRODUCTION EMAIL SETTING
 ===================================================================
 */
 import {
   sendResetPasswordEmail,
   sendVerificationEmail,
 } from "../utils/sendInBlueConfig.js"
+
+//=================================================================
 
 export const register = async (req, res) => {
   const { email, password, passwordConfirm } = req.body
@@ -55,13 +58,18 @@ export const register = async (req, res) => {
   const tokenUser = { id: user._id, email: user.email, role: user.role }
   attachCookiesToResponse(res, tokenUser)
 
+  console.log("start send email")
+
   await sendVerificationEmail({
     email,
     verificationToken,
     // frontend route
     // origin: "http://localhost:5173",
-    origin: "https://yard-hnyg.onrender.com",
+    // origin: "https://yard-hnyg.onrender.com",
+    origin: process.env.CLIENT_URL,
   })
+
+  console.log("after send email")
 
   res.status(StatusCodes.CREATED).json({
     status: "success",
@@ -131,7 +139,7 @@ export const login = async (req, res) => {
 }
 
 export const logout = (req, res, next) => {
-  // req.session = null
+  // INCLUDE PASSPORT.JS LOGOUT
   req.logout((err) => {
     if (err) return next()
 

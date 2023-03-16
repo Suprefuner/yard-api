@@ -40,7 +40,7 @@ passport.use(
           role: "user",
           isVerified: true,
           verified: new Date(Date.now()),
-          // FIXME
+          // FIXME WHAT IS THE BETTER WAY TO DO
           password: "test1234",
           passwordConfirm: "test1234",
         })
@@ -57,9 +57,11 @@ passport.use(
 )
 
 passport.serializeUser((user, done) => {
+  console.log("serialize")
   const { id, email, role } = user
   done(null, { id, email, role })
 })
 passport.deserializeUser(async (user, done) => {
+  console.log("deserializeUser")
   done(null, user)
 })

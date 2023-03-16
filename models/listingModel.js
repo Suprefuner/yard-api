@@ -19,25 +19,6 @@ const listingSchema = new mongoose.Schema(
       },
       required: [true, `please provide condition of the listing`],
     },
-    // category: {
-    //   type: String,
-    //   enum: {
-    //     values: [
-    //       "computer & tech",
-    //       "mobile phones & gadgets",
-    //       "TV & home appliances",
-    //       "apparel",
-    //       "watches",
-    //       "sneakers & footwear",
-    //       "toys",
-    //       "video games",
-    //       "car",
-    //       "motobikes",
-    //     ],
-    //     message: "{VALUE} is not supported",
-    //   },
-    //   required: [true, `please provide category of the listing`],
-    // },
     category: {
       type: mongoose.Types.ObjectId,
       ref: "Category",

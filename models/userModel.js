@@ -212,17 +212,6 @@ userSchema.methods.createJWT = function () {
   })
 }
 
-userSchema.methods.createVerificationToken = function () {
-  const verificationToken = crypto.randomBytes(40).toString("hex")
-
-  this.verificationToken = crypto
-    .createHash("sha256")
-    .update(resetToken)
-    .digest("hex")
-
-  return verificationToken
-}
-
 userSchema.methods.createPasswordResetToken = function () {
   const resetToken = crypto.randomBytes(40).toString("hex")
 

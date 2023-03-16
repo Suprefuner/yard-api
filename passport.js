@@ -56,18 +56,26 @@ passport.use(
   )
 )
 
-passport.serializeUser((user, done) => {
-  const { id, email, role } = user
-  process.nextTick(() => {
-    return done(null, { id, email, role })
-  })
-})
+// passport.serializeUser(function (user, done) {
+//   const { id, email, role } = user
+//   return done(null, { id, email, role })
+// })
+// passport.serializeUser(function(user, done){
+//   const { id, email, role } = user
+//   process.nextTick(() => {
+//     return done(null, { id, email, role })
+//   })
+// })
 
-passport.deserializeUser((user, done) => {
-  process.nextTick(() => {
-    return done(null, user)
-  })
-})
+// passport.deserializeUser((user, done) => {
+//   process.nextTick(() => {
+//     return done(null, user)
+//   })
+// })
+
+// passport.deserializeUser(function (user, done) {
+//   return done(null, user)
+// })
 
 // passport.serializeUser((user, done) => {
 //   const { id, email, role } = user

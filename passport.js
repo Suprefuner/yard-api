@@ -61,6 +61,10 @@ passport.serializeUser(function (user, done) {
   return done(null, { id, email, role })
 })
 
+passport.deserializeUser(function (user, done) {
+  return done(null, user)
+})
+
 // passport.serializeUser(function(user, done){
 //   const { id, email, role } = user
 //   process.nextTick(() => {
@@ -72,10 +76,6 @@ passport.serializeUser(function (user, done) {
 //   process.nextTick(() => {
 //     return done(null, user)
 //   })
-// })
-
-// passport.deserializeUser(function (user, done) {
-//   return done(null, user)
 // })
 
 // passport.serializeUser((user, done) => {

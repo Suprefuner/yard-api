@@ -100,6 +100,16 @@ const userSchema = new mongoose.Schema(
       min: "1950-01-01",
       max: Date.now(),
     },
+    lastOnline: {
+      type: Date,
+      min: "2020-01-01",
+      default: Date.now(),
+    },
+    numOfUnreadMessages: {
+      type: Number,
+      min: 0,
+      default: 0,
+    },
     passwordChangeAt: Date,
     passwordToken: String,
     passwordTokenExpire: Date,

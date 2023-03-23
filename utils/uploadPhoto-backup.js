@@ -18,11 +18,11 @@ const cloudinaryUploadOption = (type) => ({
       : "listing-photos",
 })
 
-const uploadPhoto = async (files, type, photo) => {
+const uploadPhoto = async (req, type, photo) => {
   // ==============================================
   // UPLOAD IMAGE FROM GOOGLE ACCOUNT
   // ==============================================
-  if (!files && photo) {
+  if (!req && photo) {
     const result = await cloudinary.uploader.upload(
       photo.replace("=s96", "=s300"),
       cloudinaryUploadOption(type)
@@ -34,9 +34,9 @@ const uploadPhoto = async (files, type, photo) => {
   // ==============================================
   // MULTIPLE IMAGES UPLOAD
   // ==============================================
-  if (Object.values(files)[0].length > 1) {
+  if (Object.values(req.files)[0].length > 1) {
     let tempFilePaths = []
-    let requests = Object.values(files)[0].map((photo) => {
+    let requests = Object.values(req.files)[0].map((photo) => {
       checkIsImage(photo)
       tempFilePaths = [...tempFilePaths, photo.tempFilePath]
 
@@ -52,18 +52,17 @@ const uploadPhoto = async (files, type, photo) => {
     tempFilePaths.forEach((path) => fs.unlinkSync(path))
     return finalResult
   }
-
   // ==============================================
   // SINGLE IMAGES UPLOAD
   // ==============================================
-  checkIsImage(files.photo)
+  checkIsImage(req.files.photo)
 
   const result = await cloudinary.uploader.upload(
-    files.photo.tempFilePath,
+    req.files.photo.tempFilePath,
     cloudinaryUploadOption(type)
   )
 
-  fs.unlinkSync(files.photo.tempFilePath)
+  fs.unlinkSync(req.files.photo.tempFilePath)
   return result
 }
 

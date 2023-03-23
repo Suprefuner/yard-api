@@ -1,6 +1,7 @@
 // IMPORT UTILS PACKAGES ==================================
 import "dotenv/config.js"
 import "express-async-errors"
+import http from "http"
 import morgan from "morgan"
 import cookieParser from "cookie-parser"
 import session from "express-session"
@@ -14,6 +15,7 @@ import helmet from "helmet"
 import xss from "xss-clean"
 import mongoSanitize from "express-mongo-sanitize"
 
+import socketServer from "./socket.js"
 import passport from "passport"
 import fileUpload from "express-fileupload"
 import { v2 as cloudinary } from "cloudinary"
@@ -29,6 +31,7 @@ import userRouter from "./routes/userRouter.js"
 import listingRouter from "./routes/listingRouter.js"
 import reviewRouter from "./routes/reviewRouter.js"
 import categoryRouter from "./routes/categoryRouter.js"
+import chatRouter from "./routes/chatRouter.js"
 import messageRouter from "./routes/messageRouter.js"
 
 /*
@@ -39,13 +42,14 @@ SETUP
 import connectDB from "./db/connect.js"
 import express from "express"
 const app = express()
+const server = http.createServer(app)
 
 app.set("trust proxy", 1)
 app.use(
   cors({
     // FIXME DEVELOPMENT
-    origin: "https://yard-hnyg.onrender.com",
-    // origin: "http://localhost:5000",
+    // origin: "https://yard-hnyg.onrender.com",
+    origin: "http://localhost:5000",
     credentials: true,
     optionsSuccessStatus: 200,
   })
@@ -77,7 +81,7 @@ app.use(
       expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
       secure: process.env.NODE_ENV === "production",
       // FIXME DEVELOPMENT
-      sameSite: "None",
+      // sameSite: "None",
       signed: true,
     },
     resave: false,
@@ -119,6 +123,7 @@ app.use("/api/v1/user", userRouter)
 app.use("/api/v1/listing", listingRouter)
 app.use("/api/v1/review", reviewRouter)
 app.use("/api/v1/category", categoryRouter)
+app.use("/api/v1/chat", chatRouter)
 app.use("/api/v1/message", messageRouter)
 
 /*
@@ -138,14 +143,23 @@ app.use(errorHandlerMiddleware)
 
 /*
 =================================================
+CONNECT TO SOCKET.IO
+=================================================
+*/
+
+const io = socketServer(server)
+
+/*
+=================================================
 CONNECT TO MONGODB AND RUN THE SERVER
 =================================================
 */
+
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URL)
 
-    app.listen(port, () => {
+    server.listen(port, () => {
       console.log(`server is listening on port:${port}`)
     })
   } catch (error) {

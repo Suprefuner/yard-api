@@ -145,7 +145,7 @@ export const getSingleListing = async (req, res) => {
       populate: {
         path: "user",
         select:
-          "photo username rating numOfReviews createdAt follower following",
+          "photo username rating numOfReviews createdAt follower following lastOnline",
       },
     })
     .populate({
@@ -164,7 +164,8 @@ export const getSingleListing = async (req, res) => {
 }
 
 export const uploadListingPhotos = async (req, res) => {
-  const result = await uploadPhoto(req, "listing")
+  // FIXME CHANGE TO FILES
+  const result = await uploadPhoto(req.files, "listing")
 
   res.status(StatusCodes.OK).json({
     status: "success",
@@ -288,7 +289,11 @@ export const editListing = async (req, res) => {
 
 export const updateListingStatus = async (req, res) => {
   const { id } = req.params
-  const { status } = req.body
+  const { status, soldTo, offerPrice } = req.body
+
+  if (status === "sold" && (!soldTo || !offerPrice)) {
+    throw new BadRequestError(`please provide who you are selling to`)
+  }
 
   const listing = await Listing.findById(id)
 
@@ -299,6 +304,11 @@ export const updateListingStatus = async (req, res) => {
   checkPermission(req.user, listing.createdBy.user)
 
   listing.status = status
+
+  if (status === "sold") {
+    listing.soldTo.user = soldTo
+    listing.dealPrice = offerPrice
+  }
   await listing.save()
 
   res.status(StatusCodes.OK).json({

@@ -91,6 +91,11 @@ const listingSchema = new mongoose.Schema(
       default: 0,
       required: true,
     },
+    numOfChats: {
+      type: Number,
+      min: 0,
+      default: 0,
+    },
   },
   { timestamps: true }
 )

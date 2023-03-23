@@ -75,7 +75,8 @@ export const getUser = async (req, res) => {
 
 export const uploadUserPhoto = async (req, res) => {
   const { id } = req.user
-  const result = await uploadPhoto(req, "user")
+  // FIXME CHANGE TO FILES
+  const result = await uploadPhoto(req.files, "user")
 
   const user = await User.findById(id)
 
@@ -221,5 +222,28 @@ export const followUser = async (req, res) => {
   res.status(StatusCodes.OK).json({
     status: "success",
     data: user,
+  })
+}
+
+export const updateUserLastOnline = async (req, res) => {
+  const user = await User.findById(id)
+
+  if (!user) throw new NotFoundError(`can't find user with this id: ${id}`)
+
+  user.lastOnline = Date.now()
+  await user.save()
+
+  res.status(StatusCodes.NO_CONTENT)
+}
+
+export const getNumOfUnreadMessage = async (req, res) => {
+  const { id } = req.user
+
+  const user = await User.findById(id)
+  if (!user) throw new NotFoundError(`can't find user with id: ${id}`)
+
+  res.status(StatusCodes.OK).json({
+    status: "success",
+    data: user.numOfUnreadMessages,
   })
 }

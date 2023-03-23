@@ -23,8 +23,8 @@ router
 
 router.get("/allMyListings", getUserAllListing)
 router.post("/uploadListingPhotos", authenticateUser, uploadListingPhotos)
-router.patch("/:id/updateStatus", authenticateUser, updateListingStatus)
 router.patch("/removeListingPhoto", authenticateUser, removeListingPhoto)
+router.patch("/:id/updateStatus", authenticateUser, updateListingStatus)
 router.patch("/:id/buyListing", authenticateUser, buyListing)
 
 router

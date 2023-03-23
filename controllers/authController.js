@@ -63,8 +63,8 @@ export const register = async (req, res) => {
     verificationToken,
     // frontend route
     // FIXME DEVELOPMENT
-    // origin: "http://localhost:5173",
-    origin: "https://yard-hnyg.onrender.com",
+    origin: "http://localhost:5173",
+    // origin: "https://yard-hnyg.onrender.com",
     // origin: process.env.CLIENT_URL,
   })
 
@@ -143,6 +143,7 @@ export const logout = (req, res, next) => {
     res.cookie("token", "", {
       httpOnly: true,
       expires: new Date(Date.now()),
+      // FIXME DEVELOPMENT
       sameSite: "None",
       secure: process.env.NODE_ENV === "production",
     })
@@ -167,8 +168,8 @@ export const forgotPassword = async (req, res) => {
         email,
         // FIXME DEVELOPMENT
         resetPasswordToken,
-        // origin: "http://localhost:5173",
-        origin: "https://yard-hnyg.onrender.com",
+        origin: "http://localhost:5173",
+        // origin: "https://yard-hnyg.onrender.com",
       })
     } catch (error) {
       user.passwordToken = undefined
@@ -220,6 +221,9 @@ export const updatePassword = async (req, res) => {
   const { password, newPassword, newPasswordConfirm } = req.body
   const { id } = req.user
 
+  console.log({ password, newPassword, newPasswordConfirm })
+  console.log(id)
+
   const user = await User.findById(id).select("+password")
 
   if (!user) {
@@ -227,6 +231,8 @@ export const updatePassword = async (req, res) => {
   }
 
   const isPasswordCorrect = await bcrypt.compare(password, user.password)
+
+  console.log(isPasswordCorrect)
 
   if (!isPasswordCorrect) {
     throw new UnauthenticatedError(`invalid credential`)
@@ -236,6 +242,8 @@ export const updatePassword = async (req, res) => {
   user.passwordConfirm = newPasswordConfirm
   await user.save()
   user.password = undefined
+
+  console.log(user)
 
   const tokenUser = { id: user._id, email: user.email, role: user.role }
   attachCookiesToResponse(res, tokenUser)

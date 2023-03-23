@@ -9,7 +9,6 @@ const authenticateUser = async (req, res, next) => {
 
   if (req.user) {
     attachCookiesToResponse(res, req.user)
-    console.log("attached google user to cookie")
     next()
   } else {
     try {

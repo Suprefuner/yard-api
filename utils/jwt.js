@@ -17,7 +17,7 @@ const attachCookiesToResponse = (res, payload) => {
     expires: new Date(Date.now() + oneDay),
     secure: process.env.NODE_ENV === "production",
     // FIXME DEVELOPMENT
-    // sameSite: "None",
+    sameSite: "None",
     signed: true,
   })
 }

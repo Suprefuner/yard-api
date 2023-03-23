@@ -10,8 +10,8 @@ export const googleScope = () => {
 export const googleCallback = () => {
   return passport.authenticate("google", {
     // FIXME DEVELOPMENT
-    // successRedirect: "https://yard-hnyg.onrender.com",
-    successRedirect: "http://localhost:5173",
+    successRedirect: "https://yard-hnyg.onrender.com",
+    // successRedirect: "http://localhost:5173",
     failureRedirect: "https://yard-hnyg.onrender.com",
   })
 }

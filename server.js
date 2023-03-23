@@ -48,8 +48,8 @@ app.set("trust proxy", 1)
 app.use(
   cors({
     // FIXME DEVELOPMENT
-    // origin: "https://yard-hnyg.onrender.com",
-    origin: "http://localhost:5000",
+    origin: "https://yard-hnyg.onrender.com",
+    // origin: "http://localhost:5000",
     credentials: true,
     optionsSuccessStatus: 200,
   })
@@ -81,7 +81,7 @@ app.use(
       expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
       secure: process.env.NODE_ENV === "production",
       // FIXME DEVELOPMENT
-      // sameSite: "None",
+      sameSite: "None",
       signed: true,
     },
     resave: false,

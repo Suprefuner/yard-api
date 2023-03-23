@@ -87,7 +87,7 @@ const socketServer = (server) => {
           })
 
         // FIXME DEVELOPMENT
-        console.log("this is chat from socket in backend")
+        // console.log("this is chat from socket in backend")
 
         const receiver = getUser(receiverId)
         if (!receiver) return

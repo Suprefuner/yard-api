@@ -63,8 +63,8 @@ export const register = async (req, res) => {
     verificationToken,
     // frontend route
     // FIXME DEVELOPMENT
-    origin: "http://localhost:5173",
-    // origin: "https://yard-hnyg.onrender.com",
+    // origin: "http://localhost:5173",
+    origin: "https://yard-hnyg.onrender.com",
     // origin: process.env.CLIENT_URL,
   })
 
@@ -168,8 +168,8 @@ export const forgotPassword = async (req, res) => {
         email,
         // FIXME DEVELOPMENT
         resetPasswordToken,
-        origin: "http://localhost:5173",
-        // origin: "https://yard-hnyg.onrender.com",
+        // origin: "http://localhost:5173",
+        origin: "https://yard-hnyg.onrender.com",
       })
     } catch (error) {
       user.passwordToken = undefined

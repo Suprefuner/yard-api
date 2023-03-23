@@ -6,6 +6,7 @@ const socketServer = (server) => {
   const io = new Server(server, {
     cors: {
       origin: process.env.CLIENT_URL,
+      credentials: true,
     },
   })
 

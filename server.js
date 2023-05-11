@@ -49,8 +49,8 @@ app.use(
   cors({
     // FIXME DEVELOPMENT
     origin: "https://yard-hnyg.onrender.com",
-    // origin: "http://localhost:5000",
     credentials: true,
+    // origin: "http://localhost:5000",
     optionsSuccessStatus: 200,
   })
 )
@@ -125,7 +125,6 @@ app.use("/api/v1/review", reviewRouter)
 app.use("/api/v1/category", categoryRouter)
 app.use("/api/v1/chat", chatRouter)
 app.use("/api/v1/message", messageRouter)
-
 /*
 =================================================
 ONCE READY TO DEPLOY
